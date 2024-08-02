@@ -1,6 +1,6 @@
 import Image from 'next/image'; // Import the Image component
 import { Button } from "@/components/ui/button";
-import PatientForm from '@/components/ui/forms/PatientForm';
+import PatientForm from '@/components/forms/PatientForm';
 import Link from 'next/link';
 
 export default function Home() {
