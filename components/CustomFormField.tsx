@@ -17,11 +17,11 @@ interface CustomProps {
     fieldType: FormFieldType
 }
 
-const CustomFormField = ({ control, fieldType }: CustomProps) => {
+const CustomFormField = ({ control, fieldType, name }: CustomProps) => {
   return (
     <FormField
     control={control}
-    name="username"
+    name={name}
     render={({ field }) => (
       <FormItem>
         <FormLabel>Username</FormLabel>
