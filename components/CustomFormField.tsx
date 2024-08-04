@@ -23,16 +23,11 @@ const CustomFormField = ({ control, fieldType, name }: CustomProps) => {
     control={control}
     name={name}
     render={({ field }) => (
-      <FormItem>
-        <FormLabel>Username</FormLabel>
-        <FormControl>
-          <Input placeholder="username" {...field} />
-        </FormControl>
-        <FormDescription>
-          This is your public display name.
-        </FormDescription>
-        <FormMessage />
-      </FormItem>
+        <FormItem className="flex-1">
+            {fieldType !== FormFieldType.CHECKBOX && label (
+                <FormLabel>{label}</FormLabel>
+            )}
+        </FormItem>
     )}
   />
   )
