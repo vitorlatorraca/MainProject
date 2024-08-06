@@ -46,7 +46,7 @@ const PatientForm = () => {
 
         <CustomFormField
         fieldType={FormFieldType.INPUT}
-        control={form.control}
+        control={control}
         name="name"
         label="Full name"
         placeholder="John Doe"
