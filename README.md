@@ -1,1 +1,1 @@
-My main project.
+My main project. Management App.
