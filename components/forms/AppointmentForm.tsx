@@ -101,7 +101,6 @@ export const AppointmentForm = ({
             cancellationReason: values.cancellationReason,
           },
           type,
-          timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone, // Adicionando a propriedade timeZone
         };
 
         const updatedAppointment = await updateAppointment(appointmentToUpdate);
@@ -126,7 +125,7 @@ export const AppointmentForm = ({
       buttonLabel = "Schedule Appointment";
       break;
     default:
-      buttonLabel = "Submit Appointment";
+      buttonLabel = "Submit Apppointment";
   }
 
   return (
